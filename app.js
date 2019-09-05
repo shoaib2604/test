@@ -36,7 +36,7 @@ app.get('/ideas/edit/:id',(req,res)=>{
 
     
     Idea.findOne({
-        _id:req.param.id
+        _id:req.params.id
     })
     .then(idea=>{
         console.log(idea.title)
